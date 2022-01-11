@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {{ .Title }}
+    </title>
+    {{/* styles */}}
+    {{ $options := dict "enableSourceMap" true }}
+    {{ if hugo.IsProduction}}
+      {{ $options := dict "enableSourceMap" false "outputStyle" "compressed" }}
+    {{ end }}
+    {{ $styles := resources.Get "scss/styles.scss" }}
+    {{ $styles = $styles | resources.ToCSS $options }}
+    {{ if hugo.IsProduction }}
+      {{ $styles = $styles | fingerprint }}
+    {{ end }}
+    <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Column 1</h3>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Column 2</h3>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Column 3</h3>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
