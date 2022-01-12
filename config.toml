@@ -1,4 +1,6 @@
 [module]
+[module.hugoVersion]
+extended = true
 [[module.mounts]]
 # Workaround for https://github.com/gohugoio/hugo/issues/6945
 source = "assets/scss/bootstrap/_vendor"
