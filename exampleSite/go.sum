@@ -1,7 +1,8 @@
 github.com/bep/empty-hugo-module v1.0.0 h1:aYc9RWea644CdYjg9zCy8nkVF4KjC3fwhUTvvcXXg8s=
 github.com/bep/empty-hugo-module v1.0.0/go.mod h1:whohinbSjMoFi/Skivj9kvdPs1tEgzYpZ4rXoQk/0/I=
-github.com/gohugoio/hugo-mod-bootstrap-scss/v4 v4.0.0-20220111121503-d09c70837b61 h1:rclBs01LjSeTPeN8/I4VASzgL/14HBnbMio6UQvGlSk=
-github.com/gohugoio/hugo-mod-bootstrap-scss/v4 v4.0.0-20220111121503-d09c70837b61/go.mod h1:QOfRknwQ8SbtzgHn+dkR+lnLbVSCG8U/1iqpDxk64QU=
+github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v4.0.0-20220111121503-d09c70837b61 h1:rclBs01LjSeTPeN8/I4VASzgL/14HBnbMio6UQvGlSk=
+github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v4.0.0-20220111121503-d09c70837b61/go.mod h1:QOfRknwQ8SbtzgHn+dkR+lnLbVSCG8U/1iqpDxk64QU=
 github.com/twbs/bootstrap v4.6.1+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
+github.com/twbs/bootstrap v5.0.2+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/bootstrap v5.1.3+incompatible h1:19+1/69025oghttdacCOGvs1wv9D5lZnpfoCvKUsPCs=
 github.com/twbs/bootstrap v5.1.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=

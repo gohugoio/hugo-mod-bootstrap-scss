@@ -12,7 +12,7 @@ Add the component to your Hugo site's config:
 ```toml
 [module]
 [[module.imports]]
-path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v4"
+path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
 ```
 
 The Bootstrap SCSS will be mounted in `assets/scss/bootstrap`, so you can then import either all:
@@ -25,14 +25,18 @@ Or only what you need:
 
 
 ```scss
+// Configuration
 @import "bootstrap/functions";
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
+@import "bootstrap/utilities";
+
+// Layout & components
 @import "bootstrap/root";
 @import "bootstrap/reboot";
 @import "bootstrap/type";
 @import "bootstrap/images";
-@import "bootstrap/code";
+@import "bootstrap/containers";
 @import "bootstrap/grid";
 @import "bootstrap/tables";
 @import "bootstrap/forms";
@@ -40,18 +44,15 @@ Or only what you need:
 @import "bootstrap/transitions";
 @import "bootstrap/dropdown";
 @import "bootstrap/button-group";
-@import "bootstrap/input-group";
-@import "bootstrap/custom-forms";
 @import "bootstrap/nav";
 @import "bootstrap/navbar";
 @import "bootstrap/card";
+@import "bootstrap/accordion";
 @import "bootstrap/breadcrumb";
 @import "bootstrap/pagination";
 @import "bootstrap/badge";
-@import "bootstrap/jumbotron";
 @import "bootstrap/alert";
 @import "bootstrap/progress";
-@import "bootstrap/media";
 @import "bootstrap/list-group";
 @import "bootstrap/close";
 @import "bootstrap/toasts";
@@ -60,10 +61,14 @@ Or only what you need:
 @import "bootstrap/popover";
 @import "bootstrap/carousel";
 @import "bootstrap/spinners";
-@import "bootstrap/utilities";
-@import "bootstrap/print";
-```
+@import "bootstrap/offcanvas";
 
+// Helpers
+@import "bootstrap/helpers";
+
+// Utilities
+@import "bootstrap/utilities/api";
+```
 
 ## Versions
 
