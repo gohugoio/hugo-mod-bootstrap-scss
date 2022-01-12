@@ -1,5 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1afd337b-0273-4c6e-aa6f-e08bdde9833b/deploy-status)](https://app.netlify.com/sites/hugo-mod-bootstrap-scss/deploys)
-
+&nbsp;&nbsp;[Test Site](https://hugo-mod-bootstrap-scss.netlify.app/)
 
 This is a [Hugo module](https://gohugo.io/hugo-modules/) that packages the [Bootstrap v4](https://getbootstrap.com/docs/4.6/getting-started/introduction/) SCSS source ready to be used in Hugo.
 
