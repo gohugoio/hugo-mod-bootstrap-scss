@@ -5,8 +5,16 @@ extended = true
 # Workaround for https://github.com/gohugoio/hugo/issues/6945
 source = "assets/scss/bootstrap/_vendor"
 target = "assets/scss/bootstrap/vendor"
+[[module.mounts]]
+source = "assets"
+target = "assets"
 [[module.imports]]
 path="github.com/twbs/bootstrap"
 [[module.imports.mounts]]
 source = "scss"
 target = "assets/scss/bootstrap"
+[[module.imports.mounts]]
+source = "js"
+target = "assets/js/bootstrap"
+[[module.imports]]
+path="github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2"

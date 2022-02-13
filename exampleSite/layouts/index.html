@@ -12,6 +12,8 @@
       font-size: 12px;
     }
   </style>
+   
+  {{/* Load Bootstrap SCSS. */}}
   {{ $options := dict "enableSourceMap" true }}
   {{ if hugo.IsProduction}}
   {{ $options := dict "enableSourceMap" false "outputStyle" "compressed" }}
@@ -22,8 +24,14 @@
   {{ $styles = $styles | fingerprint }}
   {{ end }}
   <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
-</head>
 
+   {{/* Load Bootstrap JS. */}}
+   {{ $js := resources.Get "js/index.js" }}
+   {{ $params := dict }}
+   {{ $sourceMap := cond hugo.IsProduction "" "inline" }}
+   {{ $opts := dict "sourceMap" $sourceMap "minify" hugo.IsProduction "target" "es2018" "params" $params }}
+   {{ $js = $js | js.Build $opts }}    <script src="{{ $js.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $js.Data.Integrity }}"{{ end }} defer></script>
+</head>
 <body>
   <div class="container mt-5">
     <h1>Bootstrap v5 Hugo Module</h1>
@@ -58,7 +66,19 @@
         {{ end }}
       </tbody>
     </table>
+    <h2 class="my-4">Toast (JS plugin)</h2>
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto">Bootstrap</strong>
+        <small>11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
+    </div>
+    <h2 class="my-4">Popover (JS plugin)</h2>
+    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
   </div>
 </body>
-
 </html>
