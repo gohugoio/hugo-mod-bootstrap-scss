@@ -13,10 +13,10 @@ import Popover from "js/bootstrap/src/popover";
     toast.show();
   });
 
-  var popoverTriggerList = [].slice.call(
+  let popoverTriggerList = [].slice.call(
     document.querySelectorAll('[data-bs-toggle="popover"]')
   );
-  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  popoverTriggerList.map(function (popoverTriggerEl) {
     return new Popover(popoverTriggerEl);
   });
 })();
