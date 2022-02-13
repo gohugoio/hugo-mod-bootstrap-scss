@@ -17,6 +17,8 @@ Add the component to your Hugo site's config:
 path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
 ```
 
+### SCSS
+
 The Bootstrap SCSS will be mounted in `assets/scss/bootstrap`, so you can then import either all:
 
 ```scss
@@ -24,7 +26,6 @@ The Bootstrap SCSS will be mounted in `assets/scss/bootstrap`, so you can then i
 ```
 
 Or only what you need:
-
 
 ```scss
 // Configuration
@@ -72,6 +73,10 @@ Or only what you need:
 @import "bootstrap/utilities/api";
 ```
 
+### JavaScript
+
+See the [./exampleSite](Example Site).
+
 ## Versions
 
 This repository will be versioned following https://github.com/bep/semverpair
@@ -84,5 +89,3 @@ This repository will be versioned following https://github.com/bep/semverpair
 1. Verify that `go.mod` is updated with correct version (run `hugo mod graph`).
 1. Do `cd exampleSite` and run `hugo server` and make sure it works (and that `github.com/twbs/bootstrap` version is as expected in the table).
 1. Create a Pull Request and verify that it builds and that the Netlify preview works.
-
-
