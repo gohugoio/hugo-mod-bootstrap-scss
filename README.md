@@ -1,7 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1afd337b-0273-4c6e-aa6f-e08bdde9833b/deploy-status)](https://app.netlify.com/sites/hugo-mod-bootstrap-scss/deploys)
 &nbsp;&nbsp;[Test Site](https://hugo-mod-bootstrap-scss.netlify.app/)
 
-This is a [Hugo module](https://gohugo.io/hugo-modules/) that packages the [Bootstrap v5](https://getbootstrap.com/) SCSS source ready to be used in Hugo.
+This is a [Hugo module](https://gohugo.io/hugo-modules/) that packages the [Bootstrap v5](https://getbootstrap.com/) SCSS and JavaScript source ready to be used in Hugo.
 
 For Bootstrap v4, see [the v4 branch](https://github.com/gohugoio/hugo-mod-bootstrap-scss/tree/v4).
 
@@ -75,7 +75,7 @@ Or only what you need:
 
 ### JavaScript
 
-See the [./exampleSite](Example Site).
+See the [Example Site](./exampleSite).
 
 ## Versions
 
