@@ -9,7 +9,8 @@ target = "assets/scss/bootstrap/vendor"
 source = "assets"
 target = "assets"
 [[module.imports]]
-path="github.com/twbs/bootstrap"
+ignoreConfig = true
+path = "github.com/twbs/bootstrap"
 [[module.imports.mounts]]
 source = "scss"
 target = "assets/scss/bootstrap"
@@ -17,4 +18,4 @@ target = "assets/scss/bootstrap"
 source = "js"
 target = "assets/js/bootstrap"
 [[module.imports]]
-path="github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2"
+path = "github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2"
