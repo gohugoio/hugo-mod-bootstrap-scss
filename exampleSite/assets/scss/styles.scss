@@ -1,1 +1,5 @@
 @import "bootstrap/bootstrap";
+
+.bd-placeholder-img-lg {
+  @include font-size(5.5rem);
+}
